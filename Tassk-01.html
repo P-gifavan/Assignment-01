@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Vertical and Horizontal Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Vertical Navigation Bar */
+    .vertical-menu {
+      width: 200px;
+      border: 1px solid #999;
+    }
+
+    .vertical-menu a {
+      background-color: #bfe4f3;
+      color: blue;
+      display: block;
+      padding: 12px;
+      text-decoration: none;
+    }
+
+    .vertical-menu a.active {
+      background-color: orange;
+      color: white;
+    }
+
+    /* Horizontal Navigation Bar */
+    .horizontal-menu {
+      display: flex;
+      border: 1px solid #999;
+      margin-top: 20px;
+    }
+
+    .horizontal-menu a {
+      padding: 14px 16px;
+      text-decoration: none;
+      color: blue;
+      border-right: 1px solid gray;
+      background-color: white;
+      flex: 1;
+      text-align: center;
+    }
+
+    .horizontal-menu a:first-child {
+      background-color: #888;
+      color: white;
+    }
+
+    .horizontal-menu a:last-child {
+      border-right: none;
+    }
+  </style>
+</head>
+<body>
+
+<h3>Vertical Navigation Bar</h3>
+<div class="vertical-menu">
+  <a href="#" class="active">Home</a>
+  <a href="#">Java</a>
+  <a href="#">CSS</a>
+  <a href="#">HTML</a>
+  <a href="#">Bootstrap</a>
+</div>
+
+<h3>Horizontal Navigation Bar</h3>
+<div class="horizontal-menu">
+  <a href="#">Home</a>
+  <a href="#">Java</a>
+  <a href="#">HTML</a>
+  <a href="#">CSS</a>
+</div>
+
+</body>
+</html>
